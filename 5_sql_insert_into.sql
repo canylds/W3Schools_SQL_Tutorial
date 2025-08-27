@@ -7,17 +7,26 @@ INSERT INTO table_name
 VALUES (value1, value2, value3, ...);
 */
 
-INSERT INTO Products (ProductName, UnitPrice, UnitsInStock) VALUES ('A Product', 10.50, 10)
+INSERT INTO Products
+    (ProductName, UnitPrice, UnitsInStock)
+VALUES
+    ('A Product', 10.50, 10)
 
-SELECT ProductID, UnitPrice, UnitsInStock FROM Products WHERE ProductName = 'A Product';
+SELECT ProductID, UnitPrice, UnitsInStock
+FROM Products
+WHERE ProductName = 'A Product';
 
 -- DELETE From Products WHERE ProductID = 1079;
 
-INSERT INTO Products (ProductName, UnitPrice, UnitsInStock)
+INSERT INTO Products
+    (ProductName, UnitPrice, UnitsInStock)
 VALUES
-('Product 1', 50.50, 20),
-('Product 2', 20.25, 40);
+    ('Product 1', 50.50, 20),
+    ('Product 2', 20.25, 40);
 
-SELECT * FROM Products;
+SELECT *
+FROM Products;
 
-SELECT * FROM Customers WHERE Region IS NOT NULL;
+SELECT *
+FROM Customers
+WHERE Region IS NOT NULL;
